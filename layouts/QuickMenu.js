@@ -1,14 +1,14 @@
 // import node module libraries
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import {
-    Row,
     Col,
-    Image,
     Dropdown,
+    Image,
     ListGroup,
+    Row,
 } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
 
 // simple bar scrolling used for notification item scrolling
 import SimpleBar from 'simplebar-react';
@@ -37,10 +37,11 @@ const QuickMenu = () => {
                             <ListGroup.Item className={index === 0 ? 'bg-light' : ''} key={index}>
                                 <Row>
                                     <Col>
-                                        <Link href="#" className="text-muted">
-                                            <h5 className=" mb-1">{item.sender}</h5>
-                                            <p className="mb-0"> {item.message}</p>
-                                        </Link>
+                                      <Link href={item.href || "/default"} className="text-muted">
+                                    <h5 className="mb-1">{item.sender}</h5>
+                                    <p className="mb-0">{item.message}</p>
+                                    </Link>
+
                                     </Col>
                                 </Row>
                             </ListGroup.Item>

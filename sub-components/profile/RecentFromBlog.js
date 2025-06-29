@@ -7,7 +7,7 @@ import { Col, Row, Card, Form, Dropdown, Image, Button } from "react-bootstrap";
 const RecentFromBlog = () => {
   const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <Link
-      href=""
+      href="#"
       ref={ref}
       onClick={(e) => {
         e.preventDefault();

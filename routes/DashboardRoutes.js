@@ -153,7 +153,7 @@ export const DashboardMenu = [
 		id: uuid(),
 		title: 'Download',
 		icon: 'download',
-		
+		link: '#'
 	}
 ];
 

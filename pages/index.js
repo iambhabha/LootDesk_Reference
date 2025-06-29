@@ -1,13 +1,12 @@
 // import node module libraries
 import { Fragment } from "react";
-import Link from 'next/link';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 // import widget/custom components
 import { StatRightTopIcon } from "widgets";
 
 // import sub components
-import { ActiveProjects, Teams, TasksPerformance } from "sub-components";
+import { ActiveProjects, TasksPerformance, Teams } from "sub-components";
 
 // import required data files
 import ProjectsStatsData from "data/dashboard/ProjectsStatsData";
@@ -26,7 +25,7 @@ const Home = () => {
                                     <h3 className="mb-0  text-white">Projects</h3>
                                 </div>
                                 <div>
-                                    <Link href="#" className="btn btn-white">Create New Project</Link>
+                                    {/* <Link href="#" className="btn btn-white">Create New Project</Link> */}
                                 </div>
                             </div>
                         </div>
